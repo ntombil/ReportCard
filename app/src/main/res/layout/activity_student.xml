@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/theomen"
+    tools:context="com.example.lisbeth.reportcard.StudentActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="337dp"
+                android:layout_marginLeft="70dp"
+                android:layout_height="wrap_content"
+                android:text="Report Card"
+                android:textSize="40dp"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/grad" />
+
+            <EditText
+                android:id="@+id/Student_edit_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/editText3"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@+id/editText3"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Student Number"
+                android:inputType="textPersonName"
+                android:text=""
+                tools:layout_editor_absoluteX="74dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <EditText
+                android:id="@+id/id_edit_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_marginTop="20dp"
+                android:hint="Column Id"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/name_edit_text"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_alignEnd="@+id/editText4"
+                android:layout_alignRight="@+id/editText4"
+                android:layout_below="@+id/spinner"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Name"
+                android:inputType="textPersonName"
+                android:text=""
+                tools:layout_editor_absoluteX="74dp"
+                tools:layout_editor_absoluteY="59dp" />
+
+            <Spinner
+                android:id="@+id/gender_spinner"
+                android:layout_width="217dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/editText4"
+                android:layout_marginTop="20dp"
+                android:entries="@array/Gender" />
+
+            <EditText
+                android:id="@+id/mark1_edit_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/editText4"
+                android:layout_alignRight="@+id/editText4"
+                android:layout_below="@+id/editText3"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Mathematics"
+                android:inputType="textPersonName"
+                android:text="" />
+
+            <EditText
+                android:id="@+id/mark2_edit_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/editText4"
+                android:layout_alignStart="@+id/editText4"
+                android:layout_below="@+id/editText"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Physical Science"
+                android:inputType="textPersonName"
+                android:text="" />
+
+            <EditText
+                android:id="@+id/mark3_edit_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/editText4"
+                android:layout_alignStart="@+id/editText4"
+                android:layout_below="@+id/editText2"
+                android:layout_marginTop="20dp"
+                android:layout_weight="0.43"
+                android:ems="10"
+                android:layout_marginBottom="20dp"
+                android:hint="Geography"
+                android:inputType="textPersonName"
+                android:text=""
+                tools:layout_editor_absoluteX="74dp"
+                tools:layout_editor_absoluteY="103dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="30dp">
+
+                <Button
+                    android:id="@+id/addStudent"
+                    android:layout_width="131dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="addStudent"
+                    android:background="#CC9900"
+                    android:text="ADD"/>
+
+                <Button
+                android:id="@+id/button3"
+                android:layout_width="127dp"
+                android:layout_height="wrap_content"
+                android:onClick="updateStudent"
+                android:text="UPDATE"
+                    android:background= "#CC9900" />
+
+            <Button
+                android:id="@+id/delete_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="deleteStudent"
+                android:background= "#CC9900"
+                android:text="DELETE"
+               />
+</LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

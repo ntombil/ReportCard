@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ReportCard</string>
+    <string-array name="Gender">
+        <item>Choose Gender</item>
+        <item>Female</item>
+        <item>Male</item>
+    </string-array>
+</resources>
